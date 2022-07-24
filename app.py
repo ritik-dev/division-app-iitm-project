@@ -11,5 +11,8 @@ st.write("[Links](https://www.google.com)")
 st.write('*Expression : a/b*')
 a = st.number_input('Enter a :')
 b = st.number_input('Enter b :')
-d = (a/b)
-st.write(a,"÷",b," = ",d) 
+if b==0:
+  st.write("Please enter valid value for denominator")
+else:
+  d=(a/b)
+  st.write(a,"÷",b," = ",d) 
